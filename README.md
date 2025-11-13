@@ -23,7 +23,7 @@ Simple Chatbot is a lightweight, rule-based conversational interface built with 
 
 ## Live Demo
 
-Visit the live chatbot: **[Your GitHub Pages URL will be here]**
+Visit the live chatbot: **[https://rhebacharles.github.io/AI-CHATBOT/](https://rhebacharles.github.io/AI-CHATBOT/)**
 
 ## Setup & Deployment
 
