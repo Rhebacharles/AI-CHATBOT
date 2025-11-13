@@ -117,18 +117,4 @@ Works on all modern browsers:
 - Safari (latest)
 - Mobile browsers (iOS Safari, Chrome Mobile)
 
-## Contributing
 
-Feel free to fork this repository and submit pull requests for improvements!
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Built as a demonstration of privacy-first web applications that respect user data by processing everything locally.
-
----
-
-**Made with ❤️ using vanilla JavaScript**
