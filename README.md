@@ -49,24 +49,6 @@ Visit the live chatbot: **[https://rhebacharles.github.io/AI-CHATBOT/](https://r
 
    Or simply drag `index.html` into your browser window.
 
-### Deploying to GitHub Pages
-
-1. Push your code to a GitHub repository named `simple-chatbot-static`
-
-2. Go to your repository on GitHub
-
-3. Navigate to **Settings** → **Pages**
-
-4. Under **Source**, select:
-   - Branch: `main`
-   - Folder: `/ (root)`
-
-5. Click **Save**
-
-6. GitHub will deploy your site. After a few minutes, your chatbot will be live at:
-   ```
-   https://yourusername.github.io/simple-chatbot-static/
-   ```
 
 ## File Structure
 
