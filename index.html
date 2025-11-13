@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Chatbot - Privacy-Friendly Chat</title>
+    <meta name="description" content="Static, privacy-friendly chatbot that works entirely in your browser">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Simple Chatbot</h1>
+            <p class="tagline">Static, privacy-friendly chatbot — works entirely in your browser.</p>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+        </div>
+
+        <div class="chat-input-container">
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Type your message here..."
+                autocomplete="off"
+                autofocus
+            >
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
