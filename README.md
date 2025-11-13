@@ -1,152 +1,160 @@
-# Simple Chatbot
+# 🤖 Simple Chatbot
 
-A **privacy-friendly**, static chatbot application that runs entirely in your browser. No backend, no data collection, and no external API calls.
+*A privacy-friendly, static chatbot application that runs entirely in your browser — no backend, no data collection, and no external API calls.*
 
-## Overview
+---
 
-Simple Chatbot is a lightweight, rule-based conversational interface built with vanilla HTML, CSS, and JavaScript. It demonstrates how to create an interactive chat experience without requiring any server-side infrastructure or external dependencies.
+## 🌐 Live Demo
+Experience it here: **[https://rhebacharles.github.io/AI-CHATBOT/](https://rhebacharles.github.io/AI-CHATBOT/)**
 
-### Features
+---
 
-- 🔒 **100% Privacy** - All processing happens locally in your browser
-- 🎨 **Modern UI** - Clean, minimal design with smooth animations
-- 📱 **Fully Responsive** - Works perfectly on desktop and mobile devices
-- 🤖 **Rule-Based Logic** - Responds to 5+ predefined intents:
-  - Greetings (hello, hi, hey)
+## 🧠 Overview
+**Simple Chatbot** is a lightweight, rule-based conversational interface built using **vanilla HTML, CSS, and JavaScript**.  
+It demonstrates how you can create an interactive chat experience without relying on any external servers or dependencies — everything happens locally in your browser.
+
+---
+
+## ✨ Features
+- 🔒 **100% Privacy** — All chat processing is handled entirely in your browser.  
+- 🎨 **Modern UI** — Clean, minimal design with soft shadows and smooth interactions.  
+- 📱 **Fully Responsive** — Optimized for desktop, tablet, and mobile devices.  
+- 🤖 **Rule-Based Logic** — Handles several predefined intents:
+  - Greetings (`hello`, `hi`, `hey`)
   - Help requests
   - Capability inquiries
-  - Time queries
+  - Time-related queries
   - Goodbyes
-  - Thanks
-- ⚡ **No Dependencies** - Pure vanilla JavaScript, no frameworks needed
-- 🚀 **Instant Load** - Lightweight and fast
+  - Expressions of thanks  
+- ⚡ **No Dependencies** — Pure vanilla JavaScript — no frameworks required.  
+- 🚀 **Instant Load** — Lightweight, fast, and deploys easily on GitHub Pages.  
 
-## Live Demo
+---
 
-Visit the live chatbot: **[Your GitHub Pages URL will be here]**
+## 🛠️ Setup & Deployment
 
-## Setup & Deployment
+### 🔹 Local Development
+Clone this repository and open it locally:
+```bash
+git clone https://github.com/rhebacharles/AI-CHATBOT.git
+cd AI-CHATBOT
+Open index.html in your browser:
 
-### Local Development
+bash
+Copy code
+# macOS
+open index.html
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/yourusername/simple-chatbot-static.git
-   cd simple-chatbot-static
-   ```
+# Linux
+xdg-open index.html
 
-2. Open `index.html` in your browser:
-   ```bash
-   # On macOS
-   open index.html
+# Windows
+start index.html
+Or simply drag and drop the index.html file into your browser window.
 
-   # On Linux
-   xdg-open index.html
+🔹 Deploying to GitHub Pages
+Push your code to a GitHub repository (already done for this version).
 
-   # On Windows
-   start index.html
-   ```
+Go to Settings → Pages.
 
-   Or simply drag `index.html` into your browser window.
+Under Source, select:
 
-### Deploying to GitHub Pages
+makefile
+Copy code
+Branch: main
+Folder: /(root)
+Click Save.
 
-1. Push your code to a GitHub repository named `simple-chatbot-static`
+GitHub will automatically deploy your site within a few minutes at:
 
-2. Go to your repository on GitHub
+php-template
+Copy code
+https://<your-username>.github.io/<repository-name>/
+Example (for this project):
+➡️ https://rhebacharles.github.io/AI-CHATBOT/
 
-3. Navigate to **Settings** → **Pages**
-
-4. Under **Source**, select:
-   - Branch: `main`
-   - Folder: `/ (root)`
-
-5. Click **Save**
-
-6. GitHub will deploy your site. After a few minutes, your chatbot will be live at:
-   ```
-   https://yourusername.github.io/simple-chatbot-static/
-   ```
-
-## File Structure
-
-```
-simple-chatbot-static/
+📂 File Structure
+bash
+Copy code
+AI-CHATBOT/
 ├── index.html          # Main HTML structure
-├── style.css           # Styling and responsive design
+├── style.css           # Styling and responsive layout
 ├── script.js           # Chatbot logic and intent detection
-├── README.md           # This file
+├── README.md           # Project documentation
 └── LICENSE             # MIT License
-```
+⚙️ Customization
+➕ Adding New Intents
+To extend chatbot capabilities:
 
-## Customization
+Open script.js.
 
-### Adding New Intents
+Add a new intent under the chatbot responses, for example:
 
-Edit `script.js` and modify the `botResponses` object to add new response categories:
-
-```javascript
+js
+Copy code
 const botResponses = {
     yourIntent: [
         "Response 1",
         "Response 2"
     ]
 };
-```
+Add keyword detection logic inside the detectIntent() function:
 
-Then add detection logic in the `detectIntent()` function:
-
-```javascript
+js
+Copy code
 if (lowerMessage.match(/(keyword1|keyword2)/)) {
     return 'yourIntent';
 }
-```
+🎨 Changing Colors
+To customize the chatbot theme:
 
-### Changing Colors
+Open style.css.
 
-The chatbot uses a gradient color scheme. To customize:
+Find the gradient or color definitions:
 
-1. Open `style.css`
-2. Find the gradient definitions:
-   ```css
-   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-   ```
-3. Replace the color values with your preferred colors
+css
+Copy code
+background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+Replace the colors with your preferred palette.
 
-### Modifying the Welcome Message
+💬 Modifying the Welcome Message
+Open script.js.
 
-In `script.js`, find the `window.addEventListener('load')` section and change the welcome text:
+Locate:
 
-```javascript
-addMessage("Your custom welcome message here!", 'bot');
-```
+js
+Copy code
+addMessage("Hi — I am a demo chatbot. Try typing 'hello' or 'what can you do?'");
+Replace it with your custom welcome text.
 
-## Technologies Used
+💻 Technologies Used
+HTML5 — Semantic and accessible markup
 
-- **HTML5** - Semantic markup
-- **CSS3** - Modern styling with flexbox, gradients, and animations
-- **Vanilla JavaScript** - No frameworks or libraries
+CSS3 — Responsive design with Flexbox and modern styling
 
-## Browser Compatibility
+JavaScript (ES6) — Lightweight, rule-based logic engine
 
-Works on all modern browsers:
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers (iOS Safari, Chrome Mobile)
+🌍 Browser Compatibility
+This chatbot works smoothly across:
 
-## Contributing
+Chrome / Edge (latest)
 
-Feel free to fork this repository and submit pull requests for improvements!
+Firefox (latest)
 
-## License
+Safari (latest)
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+Android Chrome
 
-## Acknowledgments
+iOS Safari
 
-Built as a demonstration of privacy-first web applications that respect user data by processing everything locally.
+🤝 Contributing
+Contributions are welcome!
+Feel free to fork this repository and submit pull requests with feature enhancements or design improvements.
 
----
+📄 License
+This project is licensed under the MIT License — see the LICENSE file for details.
 
-**Made with ❤️ using vanilla JavaScript**
+❤️ Acknowledgments
+Built with ❤️ as a demonstration of privacy-first, client-side web applications
+that respect user data by keeping all processing local to your browser.
+
