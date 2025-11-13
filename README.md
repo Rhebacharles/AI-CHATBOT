@@ -58,7 +58,6 @@ simple-chatbot-static/
 ├── style.css           # Styling and responsive design
 ├── script.js           # Chatbot logic and intent detection
 ├── README.md           # This file
-└── LICENSE             # MIT License
 ```
 
 ## Customization
